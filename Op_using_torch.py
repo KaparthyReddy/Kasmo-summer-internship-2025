@@ -7,7 +7,6 @@ from sklearn.svm import SVC
 
 print("Loading MNIST with PyTorch...")
 
-# Load MNIST dataset (downloads automatically first time)
 dataset = torchvision.datasets.MNIST('.', download=True, transform=torchvision.transforms.ToTensor())
 
 
@@ -36,7 +35,7 @@ print(f"Got {len(train_images)} training images")
 # === SIMPLE KNN MODEL ===
 #KNN
 print("\n=== TRYING KNN ===")
-# Get small amount of data (KNN is slow with lots of data)
+
 
 
 # Create and train KNN
